@@ -44,7 +44,7 @@ def causation(context):
 
     if context.new_intervening_acts:
         # recursion
-        if (run_negligence(new_intervening_act)):
+        if (run_negligence(context.new_intervening_act)):
             return(None)
     
     ...
