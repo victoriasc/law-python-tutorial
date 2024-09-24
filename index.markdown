@@ -8,7 +8,7 @@ layout: home
 
 {% for lessoncontent in site.lessoncontent %}
   <h2>
-    <a href="{{ lessoncontent.url }}">
+    <a href="{{ site.url }}{{ lessoncontent.url }}">
       {{ lessoncontent.title }} 
     </a>
   </h2>
