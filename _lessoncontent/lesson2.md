@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Lesson 2"
-permalink: /lessoncontent/lesson2/
 ---
 
 trying this

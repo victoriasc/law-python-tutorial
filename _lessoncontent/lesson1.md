@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Lesson 1"
-permalink: /lessoncontent/lesson1/
 ---
 
 # When the tides take california
