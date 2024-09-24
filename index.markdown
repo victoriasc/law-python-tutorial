@@ -4,3 +4,13 @@
 
 layout: home
 ---
+<h1> Lessons </h1>
+
+{% for lessoncontent in site.lessoncontent %}
+  <h2>
+    <a href="{{ lessoncontent.url }}">
+      {{ lessoncontent.title }} 
+    </a>
+  </h2>
+{% endfor %}
+

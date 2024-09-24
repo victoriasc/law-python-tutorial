@@ -29,6 +29,9 @@ baseurl: # test
 url: https://victoriasc.github.io/law-python-tutorial/
 twitter_username: jekyllrb
 github_username:  jekyll
+collections: 
+  lessoncontent:
+    output: true
 
 # Build settings
 theme: minima
