@@ -1,5 +1,7 @@
 ---
 layout: page
 title: "Lesson 3"
+description: "Basic Syntax of Python"
 ---
-test
+# Getting started with Python
+

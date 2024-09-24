@@ -11,6 +11,6 @@ layout: home
     <a href="{{ site.url }}{{ lessoncontent.url }}">
       {{ lessoncontent.title }} 
     </a>
+    <p> {{ lessoncontent.description }} </p>
   </h2>
 {% endfor %}
-

@@ -7,17 +7,17 @@
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Lesson 1" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Intro to Python" />
-<meta property="og:description" content="Intro to Python" />
+<meta name="description" content="Comparing coding to law" />
+<meta property="og:description" content="Comparing coding to law" />
 <link rel="canonical" href="http://localhost:4000/lessoncontent/lesson1.html" />
 <meta property="og:url" content="http://localhost:4000/lessoncontent/lesson1.html" />
 <meta property="og:site_name" content="Law Python Tutorial" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-09-24T08:37:39+00:00" />
+<meta property="article:published_time" content="2024-09-24T10:16:49+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Lesson 1" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-24T08:37:39+00:00","datePublished":"2024-09-24T08:37:39+00:00","description":"Intro to Python","headline":"Lesson 1","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/lessoncontent/lesson1.html"},"url":"http://localhost:4000/lessoncontent/lesson1.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-24T10:16:49+00:00","datePublished":"2024-09-24T10:16:49+00:00","description":"Comparing coding to law","headline":"Lesson 1","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/lessoncontent/lesson1.html"},"url":"http://localhost:4000/lessoncontent/lesson1.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Law Python Tutorial" /></head>
 <body><header class="site-header" role="banner">
@@ -49,37 +49,87 @@
 <h2 id="why-learn-python">Why learn python?</h2>
 <p>Python is an easy to learn programming language that’s highly intuitive.</p>
 
-<h2 id="what-has-this-got-to-with-law">What has this got to with law?</h2>
+<h2 id="what-has-this-got-to-with-law-aka-you-already-know-how-to-code">What has this got to with law? <em>[aka you already know how to code]</em></h2>
 <p>Python, as a computing language follows logic a lot like what we use when solving a legal problem.</p>
 
 <p>Take the example of negligence:</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">de</span>
-<span class="n">context</span> 
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># importing packages
+</span><span class="kn">import</span> <span class="nn">torts_law_knowledge</span>
 
-<span class="k">def</span> <span class="nf">duty_of_care</span><span class="p">(</span><span class="n">context</span><span class="p">){}</span>
-<span class="k">def</span> <span class="nf">breach</span><span class="p">(</span><span class="n">context</span><span class="p">){</span>
-    <span class="k">if</span>
-<span class="p">}</span>
-<span class="k">def</span> <span class="nf">causation</span><span class="p">(</span><span class="n">context</span><span class="p">){}</span>
-<span class="k">def</span> <span class="nf">defences</span><span class="p">(</span><span class="n">context</span><span class="p">){}</span>
+<span class="c1"># defining a class
+</span><span class="k">class</span> <span class="nc">Context</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">social_utility</span><span class="p">,</span> <span class="n">prob_harm</span><span class="p">,</span> <span class="n">burden</span><span class="p">,</span> <span class="n">seriousness</span><span class="p">,</span> <span class="n">new_intervening_acts</span> <span class="o">=</span> <span class="p">[]):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">social_utility</span> <span class="o">=</span> <span class="n">social_utility</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">prob_harm</span> <span class="o">=</span> <span class="n">prob_harm</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">burden</span> <span class="o">=</span> <span class="n">burden</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">seriousness</span> <span class="o">=</span> <span class="n">seriousness</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">new_intervening_acts</span> <span class="o">=</span> <span class="n">new_intervening_acts</span>
 
-<span class="k">def</span> <span class="nf">run_negligence</span><span class="p">(</span><span class="n">context</span><span class="p">){</span>
-    <span class="k">if</span> <span class="n">duty_of_care</span><span class="p">(</span><span class="n">context</span><span class="p">){</span>
-        <span class="k">if</span> <span class="n">breach</span><span class="p">(</span><span class="n">context</span><span class="p">){</span>
-            <span class="k">if</span> <span class="n">causation</span><span class="p">(</span><span class="n">context</span><span class="p">){</span>
-                <span class="k">if</span> <span class="ow">not</span> <span class="n">defences</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
-                <span class="k">return</span><span class="p">(</span><span class="s">"Negligence is present"</span><span class="p">)</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
 
-<span class="n">problem_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">"question_1"</span><span class="p">,</span><span class="s">"question_2"</span><span class="p">,</span> <span class="s">"question_3"</span><span class="p">]</span>
+<span class="c1"># defining functions
+</span><span class="k">def</span> <span class="nf">duty_of_care</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
 
-<span class="k">for</span> <span class="n">context</span> <span class="ow">in</span> <span class="n">problem_list</span><span class="p">:</span>
-    <span class="n">run_negligence</span><span class="p">(</span><span class="n">context</span><span class="p">)</span></code></pre></figure>
 
+<span class="k">def</span> <span class="nf">breach</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+    <span class="p">...</span>
+
+    <span class="c1"># conditionals and basic math
+</span>    <span class="k">if</span> <span class="p">(</span><span class="n">context</span><span class="p">.</span><span class="n">prob_harm</span> <span class="o">+</span> <span class="n">context</span><span class="p">.</span><span class="n">seriousness</span> <span class="o">&gt;</span> <span class="n">context</span><span class="p">.</span><span class="n">social_utility</span> <span class="o">+</span> <span class="n">context</span><span class="p">.</span><span class="n">burden</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">TRUE</span>
+
+<span class="k">def</span> <span class="nf">causation</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+    <span class="p">...</span>
+
+    <span class="k">if</span> <span class="n">context</span><span class="p">.</span><span class="n">new_intervening_acts</span><span class="p">:</span>
+        <span class="c1"># recursion
+</span>        <span class="k">if</span> <span class="p">(</span><span class="n">run_negligence</span><span class="p">(</span><span class="n">new_intervening_act</span><span class="p">)):</span>
+            <span class="k">return</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
+    
+    <span class="p">...</span>
+
+
+<span class="k">def</span> <span class="nf">run_negligence</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">duty_of_care</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">breach</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">causation</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+
+                <span class="c1"># using other packages
+</span>                <span class="k">if</span> <span class="ow">not</span> <span class="n">torts_law_knowledge</span><span class="p">.</span><span class="n">defences</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+                    <span class="k">return</span><span class="p">(</span><span class="s">"Negligence is present"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">exam</span><span class="p">(</span><span class="n">problem_list</span><span class="p">):</span>
+    <span class="c1"># lists
+</span>    <span class="n">outcome</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">context</span> <span class="ow">in</span> <span class="n">problem_list</span><span class="p">:</span>
+        <span class="c1"># using methods
+</span>        <span class="n">outcome</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">run_negligence</span><span class="p">(</span><span class="n">context</span><span class="p">))</span>
+    
+    <span class="c1"># printing
+</span>    <span class="k">print</span><span class="p">(</span><span class="n">outcome</span><span class="p">)</span>
+
+<span class="c1"># running code
+</span><span class="n">__main__</span><span class="p">:</span>
+    <span class="c1"># using objects
+</span>    <span class="n">NIA_1</span> <span class="o">=</span> <span class="n">Context</span><span class="p">(</span><span class="n">social_utility</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">prob_harm</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span> <span class="n">burden</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span> <span class="n">seriousness</span> <span class="o">=</span> <span class="mi">7</span><span class="p">)</span>
+
+    <span class="n">question1</span> <span class="o">=</span> <span class="n">Context</span><span class="p">(</span><span class="n">social_utility</span> <span class="o">=</span> <span class="mi">6</span><span class="p">,</span> <span class="n">prob_harm</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">burden</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span> <span class="n">seriousness</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">new_intervening_acts</span> <span class="o">=</span> <span class="p">[</span><span class="n">NIA_1</span><span class="p">])</span>
+
+    <span class="n">question_2</span> <span class="o">=</span> <span class="n">Context</span><span class="p">(</span><span class="n">social_utility</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">prob_harm</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span> <span class="n">burden</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">seriousness</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span> <span class="n">new_intervening_acts</span> <span class="o">=</span> <span class="p">[</span><span class="n">question1</span><span class="p">])</span>
+
+    <span class="n">problem_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">question_1</span><span class="p">,</span><span class="n">question_2</span><span class="p">]</span>
+    <span class="n">exam</span><span class="p">(</span><span class="n">problem_list</span><span class="p">)</span></code></pre></figure>
+
+<p>Here you can see that in our (simplified) process of stepping through negligence we use a lot of fundamental coding ideas:</p>
+<ul>
+  <li>We break our work into parts (functions)</li>
+  <li>We define go through the problem and identify the relevant facts (building the context object)</li>
+  <li>We dismiss the cause of action if there is insufficient evidence (conditionals)</li>
+</ul>
+
+<p>AND MORE!</p>
+
+<p>Through this mini-python series we will take a look at some of these python capabilities and build a function that we can bring into law.</p>
 
   </div>
 
