@@ -4,12 +4,12 @@ title: "Lesson 1"
 description: "Comparing coding to law"
 ---
 
-# Intro to Python
+## Intro to Python
 
-## Why learn python?
+### Why learn python?
 Python is an easy to learn programming language that's highly intuitive. 
 
-## What has this got to with law? *[aka you already know how to code]*
+### What has this got to with law? *[aka you already know how to code]*
 Python, as a computing language follows logic a lot like what we use when solving a legal problem.
 
 Take the example of negligence:

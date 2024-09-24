@@ -3,16 +3,16 @@ layout: page
 title: "Lesson 2"
 description: "Running Python in Jupyter Notebooks"
 ---
-# Running Python
+## Running Python
 
-## Where can I run python 
+### Where can I run python 
 We are going to be using an online version of jupyter notebooks.
 This allows you to both run python code in segments and to use markdown to notate what you learn.
 
 You can find the link here:
 [Jupyter notebooks][jupyter-nb]
 
-## Using Jupyter notebook
+### Using Jupyter notebook
 
 1. Open a new notebook
 ![Image]({{ site.url }}/assets/images/notebook_creation.png)
