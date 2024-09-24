@@ -19,16 +19,12 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Law Python Tutorial
-email: your-email@example.com
+email: events@satla.net
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Teaching law students that coding isn't as scary as it seems. 
 domain: victoriasc.github.io/law-python-tutorial/
 baseurl: 
 url: https://victoriasc.github.io/law-python-tutorial/
-twitter_username: jekyllrb
-github_username:  jekyll
 collections: 
   lessoncontent:
     output: true

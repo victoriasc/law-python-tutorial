@@ -13,11 +13,11 @@
 <meta property="og:url" content="http://localhost:4000/lessoncontent/lesson3.html" />
 <meta property="og:site_name" content="Law Python Tutorial" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-09-24T10:16:49+00:00" />
+<meta property="article:published_time" content="2024-09-24T10:48:05+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Lesson 3" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-24T10:16:49+00:00","datePublished":"2024-09-24T10:16:49+00:00","description":"Basic Syntax of Python","headline":"Lesson 3","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/lessoncontent/lesson3.html"},"url":"http://localhost:4000/lessoncontent/lesson3.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-24T10:48:05+00:00","datePublished":"2024-09-24T10:48:05+00:00","description":"Basic Syntax of Python","headline":"Lesson 3","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/lessoncontent/lesson3.html"},"url":"http://localhost:4000/lessoncontent/lesson3.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Law Python Tutorial" /></head>
 <body><header class="site-header" role="banner">
@@ -46,6 +46,64 @@
   <div class="post-content">
     <h1 id="getting-started-with-python">Getting started with Python</h1>
 
+<h2 id="basic-syntax">Basic syntax</h2>
+<p>Like using any language (e.g. english with punctuation and word order) Python has basic syntax you need to use to get your code to work. In fact it is through this syntax that the <em>interpreter</em> knows how to run code.</p>
+
+<h3 id="key-examples">Key examples</h3>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># if you want to add a *comment* to your code (aka something that does run) add a hash tag
+</span>
+<span class="c1"># make sure to indent your code (e.g. with loops and conditionals)
+</span><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"high"</span><span class="p">)</span>
+
+<span class="c1"># Code is most useful when it's generalisable making variables your best friends
+# A variable is kind of like a container - the contents may change but the label stays the same
+</span><span class="n">a</span> <span class="o">=</span> <span class="mi">26</span>
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">6</span>
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="c1"># you'll notice that if you want to allocate data to that label you use an `=`</span></code></pre></figure>
+
+<h2 id="basic-functions">Basic Functions</h2>
+<p>Most functions look like this <code class="language-plaintext highlighter-rouge">add()</code>
+Think of them a bit like maths functions - You tend to put something into them (e.g. 2 and 3) and get something out (5)</p>
+
+<h3 id="printing">Printing</h3>
+<p>One of the most useful functions is <code class="language-plaintext highlighter-rouge">print()</code>. Use it any time you want an output to be printed after running the code</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s">"Hello, World"</span><span class="p">)</span></code></pre></figure>
+
+<h3 id="maths-functions">Maths functions</h3>
+<p>An exception to the <code class="language-plaintext highlighter-rouge">function()</code> format are mathematical expressions. There are some functions that carry across their notation from maths</p>
+
+<p>Examples include:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># plus
+</span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="c1"># minus 
+</span><span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="mi">2</span>
+<span class="c1"># multiplication 
+</span><span class="n">c</span> <span class="o">=</span> <span class="n">b</span><span class="o">*</span><span class="n">a</span>
+<span class="c1"># division 
+</span><span class="n">d</span> <span class="o">=</span> <span class="n">b</span><span class="o">/</span><span class="n">a</span>
+<span class="c1"># greater than and less than 
+</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="c1"># greater or equal a &gt;= b
+</span><span class="n">b</span> <span class="o">&lt;</span> <span class="n">a</span> <span class="c1"># less than or equal a &lt;= b
+</span>
+<span class="c1"># equals
+</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="c1"># not equal a != b
+</span>
+<span class="c1"># or
+</span><span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">|</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">):</span>
+    <span class="c1"># and 
+</span>    <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&amp;</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+
+<span class="c1"># if you add, subtracting or multiplying to the same variable you can also simplify it
+</span><span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># this is: a = a + 1
+</span>
+<span class="c1"># There are even more (but here are probably the most useful ones)</span></code></pre></figure>
 
   </div>
 
@@ -62,14 +120,14 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">Law Python Tutorial</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
+          <li class="p-name">Law Python Tutorial</li><li><a class="u-email" href="mailto:events@satla.net">events@satla.net</a></li></ul>
       </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
 </div>
 
       <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+        <p>Teaching law students that coding isn&#39;t as scary as it seems. </p>
       </div>
     </div>
 
